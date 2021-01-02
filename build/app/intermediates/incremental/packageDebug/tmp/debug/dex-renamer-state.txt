@@ -1,0 +1,4 @@
+#Sat Jan 02 16:24:27 IST 2021
+base.0=/Users/shivanshsingh/Desktop/Calculator/calculator_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
