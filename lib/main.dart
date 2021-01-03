@@ -49,6 +49,7 @@ class _FormState extends State<Form> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           "Interest Calculator",
@@ -68,7 +69,10 @@ class _FormState extends State<Form> {
                     child: Padding(
                   padding: EdgeInsets.all(1.0),
                   child: ListTile(
-                    title: Text("Simple Interest"),
+                    title: Text(
+                      "Simple Interest",
+                      style: TextStyle(fontSize: 13),
+                    ),
                     leading: Radio(
                       value: "simple",
                       groupValue: _character,
@@ -85,7 +89,10 @@ class _FormState extends State<Form> {
                     child: Padding(
                   padding: EdgeInsets.all(1.0),
                   child: ListTile(
-                    title: Text("Coumpound Interest"),
+                    title: Text(
+                      "Coumpound Interest",
+                      style: TextStyle(fontSize: 13),
+                    ),
                     leading: Radio(
                       value: "coumpound",
                       groupValue: _character,
@@ -189,7 +196,7 @@ class _FormState extends State<Form> {
                   textColor: Colors.black,
                   child: Text(
                     "CALCULATE",
-                    textScaleFactor: 1.75,
+                    style: TextStyle(fontSize: 15),
                   ),
                   onPressed: () {
                     this.result = _getEffectiveAmount(this.nv);
@@ -205,7 +212,7 @@ class _FormState extends State<Form> {
                   textColor: Colors.black,
                   child: Text(
                     "RESET",
-                    textScaleFactor: 1.75,
+                    style: TextStyle(fontSize: 15),
                   ),
                   onPressed: () {
                     _reset();
